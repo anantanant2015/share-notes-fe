@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import CustomLayout from './containers/Layout';
-import SharedNotesList from './containers/SharedNotesListView';
+import { BrowserRouter as Router } from 'react-router-dom';
+import BaseRouter from './routes';
 import 'antd/dist/antd.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <CustomLayout>
-          <SharedNotesList />
-        </CustomLayout>
+        <Router>
+          <CustomLayout>
+            <BaseRouter />
+          </CustomLayout>
+        </Router>
       </div>
     );
   }

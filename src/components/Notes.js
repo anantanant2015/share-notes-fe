@@ -3,7 +3,7 @@ import { List, Card } from 'antd';
 
 
 
-const SharedNotes = (props) => {
+const Notes = (props) => {
 	return(
 		<List
     grid={{
@@ -12,11 +12,11 @@ const SharedNotes = (props) => {
     dataSource={props.data}
     renderItem={item => (
       <List.Item>
-        <Card title={item.title}>{item.description}</Card>
+        <a href={`/${item.id}`}><Card title={item.title}>{item.description}</Card></a>
       </List.Item>
     )}
   />
 	);
 }
 
-export default SharedNotes;
+export default Notes;
