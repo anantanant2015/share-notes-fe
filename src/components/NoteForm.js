@@ -1,9 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-import {
-    Form, Input, Button,
-  } from 'antd';
+import { Form, Input, Button } from 'antd';
   
   class NoteForm extends React.Component {
   

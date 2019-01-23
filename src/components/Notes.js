@@ -1,8 +1,6 @@
 import React from 'react';
 import { List, Card } from 'antd';
 
-
-
 const Notes = (props) => {
 	return(
 		<List
